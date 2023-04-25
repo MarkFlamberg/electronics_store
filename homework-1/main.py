@@ -1,5 +1,7 @@
 from src.item import Item
 
+
+
 if __name__ == '__main__':
     item1 = Item("Смартфон", 10000, 20)
     item2 = Item("Ноутбук", 20000, 5)
@@ -15,4 +17,9 @@ if __name__ == '__main__':
     print(item1.price)  # 8000.0
     print(item2.price)  # 20000
 
+    # не понял как сделать вывод <__main__> для этого нужно принтовать из файла item.py...
+    # а тут src.item по сути же тоже самое
     print(Item.all)  # [<__main__.Item object at 0x000001EC6250C690>, <__main__.Item object at 0x000001EC6250C6D0>]
+
+
+
