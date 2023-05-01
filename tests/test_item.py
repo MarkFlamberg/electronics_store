@@ -4,6 +4,14 @@ from src.item import Item
 item1 = Item("Смартфон", 10000, 20)
 
 
+def test_repr():
+    assert repr(item1) == "Item('Смартфон', 10000, 20)"
+
+
+def test_str():
+    assert str(item1) == 'Смартфон'
+
+
 def test_calculate_total_price():
     assert item1.calculate_total_price() == 200000
 
@@ -36,4 +44,6 @@ def test_string_to_number():
 def test_instantiate_from_csv():
     Item.instantiate_from_csv()
     assert Item.all[0].name == "Смартфон"
+
+
 
